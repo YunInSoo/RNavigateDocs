@@ -7,7 +7,7 @@ expo start // 통해서 실행
 ```
 
 ## Navigators 종류
-- [ ] Navtive-Stack 세팅
+- [x] Navtive-Stack 세팅
 - [ ] Stack 세팅
 - [ ] Drawer Navigator 세팅
 - [ ] Bottom Tabs Navigator 세팅
