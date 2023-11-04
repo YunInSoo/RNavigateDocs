@@ -14,6 +14,12 @@ const HomeScreen = () => {
   const onPressDrawer = (e) => {
     navigation.push(`Feed`, { param: "Feed" });
   };
+  const onPressStack = (e) => {
+    navigation.push(`StackDetail`, { param: "Feed" });
+  };
+  const onPressStack2 = (e) => {
+    navigation.push(`StackDetail2`, { param: "Feed" });
+  };
   return (
     <View style={styles.mainView}>
       <View style={styles.containerTop}>
@@ -28,6 +34,12 @@ const HomeScreen = () => {
         </TouchableOpacity>
         <TouchableOpacity style={styles.subBtnView} onPress={onPressDrawer}>
           <Text style={styles.fontContainer}> 상위 컴포넌트 screen 전환 </Text>
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.subBtnView} onPress={onPressStack}>
+          <Text style={styles.fontContainer}>Stack 기본 효과 </Text>
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.subBtnView} onPress={onPressStack2}>
+          <Text style={styles.fontContainer}> Stack 느리게 screen 전환 </Text>
         </TouchableOpacity>
       </View>
       <TouchableOpacity
